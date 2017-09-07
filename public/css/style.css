@@ -1,0 +1,151 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  font-family: Georgia;
+  color: #4d4f4f;
+  font-size: 1.2rem; }
+
+.container {
+  padding: 0 135px; }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px; }
+
+.top-logo {
+  margin: auto 45px 11px 0; }
+  .top-logo p {
+    font-size: 1.3rem; }
+
+.top-nav__list {
+  margin-top: 25px; }
+  .top-nav__list .top-nav__item {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 20px;
+    font-style: italic;
+    text-decoration: underline; }
+
+.header__phone {
+  margin: auto auto 11px 0;
+  width: 235px; }
+  .header__phone .phone {
+    float: left;
+    margin-right: 10px;
+    font-family: Arial; }
+    .header__phone .phone span {
+      font-size: 2.4rem; }
+  .header__phone .header__email {
+    margin-top: 7px;
+    font-style: italic;
+    text-decoration: underline; }
+
+.i-bank {
+  width: 185px;
+  padding: 15px 0 20px 40px;
+  font-size: 1.2rem;
+  background-color: #f7f2dc;
+  border-radius: 0 0 0 20px; }
+  .i-bank h4 {
+    font-style: bold;
+    margin-bottom: 17px; }
+  .i-bank .i-bank__nav .i-bank__nav-item {
+    margin-bottom: 5px;
+    font-style: italic;
+    text-decoration: underline; }
+
+/* SIDEBAR */
+.left-sidebar {
+  width: 220px; }
+
+.client-request {
+  background-color: #f7f2dc;
+  border-radius: 0 20px 0 0;
+  padding: 0 0 20px 0; }
+  .client-request h4 {
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 0 20px 0 0;
+    padding: 18px 0 10px 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: #5cbb10;
+    background: -moz-linear-gradient(top, #5cbb10 1%, #77cd11 100%);
+    background: -webkit-linear-gradient(top, #5cbb10 1%, #77cd11 100%);
+    background: linear-gradient(to bottom, #5cbb10 1%, #77cd11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cbb10', endColorstr='#77cd11',GradientType=0 ); }
+  .client-request .client-request__nav {
+    padding-left: 20px; }
+    .client-request .client-request__nav .client-request__nav-item {
+      font-style: italic;
+      text-decoration: underline;
+      margin-bottom: 8px;
+      line-height: 16px; }
+  .client-request .client-request__search {
+    position: relative;
+    margin: 40px 0 0 20px; }
+    .client-request .client-request__search form input {
+      margin-top: 10px;
+      padding-left: 5px;
+      width: 74%;
+      font-size: 1.1rem;
+      font-family: Georgia; }
+    .client-request .client-request__search .search-icon {
+      position: absolute;
+      top: 8px;
+      right: 13px;
+      display: block;
+      width: 24px;
+      height: 21px;
+      background-image: url(/public/images/search-icon.png); }
+
+.feedback-block .feedback-block__nav .feedback-block__item {
+  display: block;
+  position: relative;
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
+  border: 10px #f0eace solid; }
+  .feedback-block .feedback-block__nav .feedback-block__item span {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 89px;
+    line-height: 14px;
+    padding: 6px 0;
+    right: -80px;
+    top: 31%;
+    font-style: italic; }
+
+.feedback-block .feedback-block__nav .feedback-block__item:hover span {
+  color: #369a00; }
+
+.feedback-block .feedback-block__nav .feedback-block__item:hover {
+  border: 10px #73ca14 solid; }
+
+.feedback-block .feedback-block__nav .consult {
+  background-image: url(/public/images/feedback-image-1.png); }
+
+.feedback-block .feedback-block__nav .review {
+  background-image: url(/public/images/feedback-image-2.png); }
+
+.feedback-block .feedback-block__nav .quest {
+  background-image: url(/public/images/feedback-image-3.png); }
+
+.feedback-block .feedback-block__nav .credit-rate {
+  background-image: url(/public/images/feedback-image-4.png);
+  border: 0;
+  width: 105px;
+  height: 105px; }
+  .feedback-block .feedback-block__nav .credit-rate span {
+    right: -75px;
+    top: 36%;
+    padding: 2px 0; }
+
+.feedback-block .feedback-block__nav .credit-rate:hover {
+  border: 0; }
