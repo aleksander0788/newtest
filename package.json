@@ -1,19 +1,18 @@
 {
   "name": "newtest",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.0.0",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
-  },
-  "devDependencies": {
-    "gulp-autoprefixer": "^4.0.0"
-  },
-  "description": ""
+  }
 }
