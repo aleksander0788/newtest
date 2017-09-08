@@ -9,10 +9,13 @@ body {
   font-size: 1.2rem; }
 
 .container {
+  display: flex;
+  /* flex-wrap: wrap; */
   padding: 0 135px; }
 
 header {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 30px; }
@@ -50,7 +53,7 @@ header {
   padding: 15px 0 20px 40px;
   font-size: 1.2rem;
   background-color: #f7f2dc;
-  border-radius: 0 0 0 20px; }
+  border-radius: 0 0 0 30px; }
   .i-bank h4 {
     font-style: bold;
     margin-bottom: 17px; }
@@ -61,16 +64,19 @@ header {
 
 /* SIDEBAR */
 .left-sidebar {
-  width: 220px; }
+  /*width: 220px;*/
+  /* padding-right: 20px; */ }
 
 .client-request {
+  width: 220px;
   background-color: #f7f2dc;
-  border-radius: 0 20px 0 0;
+  border-radius: 0 30px 0 0;
+  margin-bottom: 35px;
   padding: 0 0 20px 0; }
   .client-request h4 {
     color: white;
     font-size: 1.8rem;
-    border-radius: 0 20px 0 0;
+    border-radius: 0 30px 0 0;
     padding: 18px 0 10px 0;
     margin-bottom: 20px;
     padding-left: 20px;
@@ -104,48 +110,84 @@ header {
       height: 21px;
       background-image: url(/public/images/search-icon.png); }
 
-.feedback-block .feedback-block__nav .feedback-block__item {
-  display: block;
-  position: relative;
-  width: 77px;
-  height: 77px;
-  border-radius: 100%;
-  border: 10px #f0eace solid; }
-  .feedback-block .feedback-block__nav .feedback-block__item span {
+.feedback-block {
+  margin-bottom: 28px; }
+  .feedback-block .feedback-block__nav .feedback-block__item {
     display: block;
-    background-color: white;
-    position: absolute;
-    width: 89px;
-    line-height: 14px;
-    padding: 6px 0;
-    right: -80px;
-    top: 31%;
-    font-style: italic; }
+    position: relative;
+    width: 77px;
+    height: 77px;
+    border-radius: 100%;
+    border: 10px #f0eace solid;
+    margin-bottom: 15px; }
+    .feedback-block .feedback-block__nav .feedback-block__item span {
+      display: block;
+      width: 89px;
+      position: absolute;
+      right: -80px;
+      top: 31%;
+      font-style: italic;
+      background-color: white;
+      line-height: 14px;
+      padding: 6px 0; }
+  .feedback-block .feedback-block__nav .feedback-block__item:hover span {
+    color: #369a00; }
+  .feedback-block .feedback-block__nav .feedback-block__item:hover {
+    border: 10px #73ca14 solid; }
+  .feedback-block .feedback-block__nav .consult {
+    background-image: url(/public/images/feedback-image-1.png); }
+  .feedback-block .feedback-block__nav .review {
+    background-image: url(/public/images/feedback-image-2.png); }
+  .feedback-block .feedback-block__nav .quest {
+    background-image: url(/public/images/feedback-image-3.png); }
+  .feedback-block .feedback-block__nav .credit-rate {
+    background-image: url(/public/images/feedback-image-4.png);
+    border: 0;
+    width: 105px;
+    height: 105px; }
+    .feedback-block .feedback-block__nav .credit-rate span {
+      right: -75px;
+      top: 36%;
+      padding: 2px 0; }
+  .feedback-block .feedback-block__nav .credit-rate:hover {
+    border: 0; }
 
-.feedback-block .feedback-block__nav .feedback-block__item:hover span {
-  color: #369a00; }
+.exch-rates {
+  padding: 15px 0 25px 10px;
+  background: #f7f2dc;
+  border-radius: 0 0 0 30px; }
+  .exch-rates h4 {
+    margin-bottom: 12px; }
 
-.feedback-block .feedback-block__nav .feedback-block__item:hover {
-  border: 10px #73ca14 solid; }
+.rates-table th {
+  font-weight: normal; }
 
-.feedback-block .feedback-block__nav .consult {
-  background-image: url(/public/images/feedback-image-1.png); }
+.rates-table th,
+.rates-table td {
+  padding-bottom: 7px;
+  font-style: normal;
+  width: 62px;
+  text-align: center; }
 
-.feedback-block .feedback-block__nav .review {
-  background-image: url(/public/images/feedback-image-2.png); }
+/* MAIN-CONTENT */
+.client-nav {
+  width: 100%;
+  height: 200px;
+  border-radius: 30px 0 0 0;
+  background: #080;
+  margin-left: 40px; }
 
-.feedback-block .feedback-block__nav .quest {
-  background-image: url(/public/images/feedback-image-3.png); }
+.money-nav {
+  width: 100%;
+  height: 150px;
+  border-radius: 0 0 30px 0;
+  background: #080;
+  margin-top: 30px;
+  margin-left: 40px; }
 
-.feedback-block .feedback-block__nav .credit-rate {
-  background-image: url(/public/images/feedback-image-4.png);
-  border: 0;
-  width: 105px;
-  height: 105px; }
-  .feedback-block .feedback-block__nav .credit-rate span {
-    right: -75px;
-    top: 36%;
-    padding: 2px 0; }
-
-.feedback-block .feedback-block__nav .credit-rate:hover {
-  border: 0; }
+.partners {
+  padding: 15px 0 25px 10px;
+  background: #f7f2dc;
+  border-radius: 0 0 30px 0;
+  width: 100%;
+  height: 200px; }
