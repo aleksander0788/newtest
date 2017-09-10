@@ -7,7 +7,7 @@
 git clone https://github.com/newyorrker/newtest.git
 
 ### Установить пакеты
-npm install
+в директории репозитория выполнить npm install
 
 ### Запустить gulp
 gulp sass
