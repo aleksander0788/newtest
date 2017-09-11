@@ -146,14 +146,13 @@ header {
   .feedback-block .feedback-block__nav .feedback-block__item:hover {
     border: 10px #73ca14 solid; }
   .feedback-block .feedback-block__nav .consult {
-    background-image: url(../images/feedback-image-1.png); }
+    background-image: url(/public/images/feedback-image-1.png); }
   .feedback-block .feedback-block__nav .review {
-    background-image: url(../images/feedback-image-2.png); }
+    background-image: url(/public/images/feedback-image-2.png); }
   .feedback-block .feedback-block__nav .quest {
-    background-image: url(../images/feedback-image-3.png); }
+    background-image: url(/public/images/feedback-image-3.png); }
   .feedback-block .feedback-block__nav .credit-rate {
     position: relative;
-    background-image: url(../images/feedback-image-4.png);
     border: 0;
     width: 105px;
     height: 105px;
@@ -176,8 +175,8 @@ header {
     z-index: -1; }
   .feedback-block .feedback-block__nav .credit-rate:hover:after {
     opacity: 1; }
-  .feedback-block .feedback-block__nav .credit-rate:hover {
-    border: 0; }
+  .feedback-block .feedback-block__nav .feedback-block__item.credit-rate:hover {
+    border: none; }
 
 .exch-rates {
   padding: 15px 0 25px 10px;

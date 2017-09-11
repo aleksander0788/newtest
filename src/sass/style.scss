@@ -233,8 +233,8 @@ header {
 		.credit-rate:hover:after {
 			opacity: 1;
 		}
-		.credit-rate:hover {
-			border: 0;
+		.feedback-block__item.credit-rate:hover {
+			border: none
 		}
 	}
 }
