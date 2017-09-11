@@ -32,7 +32,7 @@ header {
   padding-bottom: 30px; }
 
 .top-logo {
-  margin: auto 45px 11px 0; }
+  margin: 35px 45px 11px 0; }
   .top-logo p {
     font-size: 1.3rem; }
 
@@ -46,7 +46,7 @@ header {
     text-decoration: underline; }
 
 .header__phone {
-  margin: auto auto 11px 0;
+  margin: 63px auto 11px 0;
   width: 235px; }
   .header__phone .phone {
     float: left;
@@ -152,14 +152,29 @@ header {
   .feedback-block .feedback-block__nav .quest {
     background-image: url(/public/images/feedback-image-3.png); }
   .feedback-block .feedback-block__nav .credit-rate {
-    background-image: url(/public/images/feedback-image-4.png);
+    position: relative;
     border: 0;
     width: 105px;
-    height: 105px; }
+    height: 105px;
+    /* background: url(/public/images/feedback-image-4.png); */ }
     .feedback-block .feedback-block__nav .credit-rate span {
       right: -75px;
       top: 36%;
-      padding: 2px 0; }
+      padding: 2px 0;
+      opacity: 1; }
+  .feedback-block .feedback-block__nav .credit-rate:after {
+    content: "";
+    background: url(/public/images/feedback-image-4.png);
+    opacity: 0.5;
+    border: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .feedback-block .feedback-block__nav .credit-rate:hover:after {
+    opacity: 1; }
   .feedback-block .feedback-block__nav .credit-rate:hover {
     border: 0; }
 
@@ -181,6 +196,10 @@ header {
   text-align: center; }
 
 /* MAIN-CONTENT */
+#main-container,
+#footer {
+  width: 1020px; }
+
 main.main-content {
   width: 760px;
   margin-left: 40px; }
@@ -315,7 +334,7 @@ main.main-content {
 .news-block {
   width: 100%;
   height: 250px;
-  margin-top: 27px; }
+  margin-top: 28px; }
 
 .news-block__main-item img {
   float: left;
@@ -404,13 +423,16 @@ main.main-content {
     font-size: 1.1rem; }
 
 .footer-grid-col {
-  margin-left: 30px; }
+  margin-left: 43px; }
 
 .footer-nav__list .footer-nav__item {
   display: inline-block;
   margin-right: 35px;
   font-style: italic;
   text-decoration: underline; }
+
+.footer-nav__item:last-child {
+  margin-right: 0; }
 
 .footer__contact-block {
   display: flex;
@@ -425,7 +447,8 @@ main.main-content {
   .footer__contact-block .phone {
     width: 220px; }
   .footer__contact-block .copyright {
-    width: 300px; }
+    width: 300px;
+    margin-right: 0; }
     .footer__contact-block .copyright .devel {
       font-family: Arial;
       font-style: italic;
