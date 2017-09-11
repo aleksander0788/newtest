@@ -146,13 +146,14 @@ header {
   .feedback-block .feedback-block__nav .feedback-block__item:hover {
     border: 10px #73ca14 solid; }
   .feedback-block .feedback-block__nav .consult {
-    background-image: url(/public/images/feedback-image-1.png); }
+    background-image: url(../images/feedback-image-1.png); }
   .feedback-block .feedback-block__nav .review {
-    background-image: url(/public/images/feedback-image-2.png); }
+    background-image: url(../images/feedback-image-2.png); }
   .feedback-block .feedback-block__nav .quest {
-    background-image: url(/public/images/feedback-image-3.png); }
+    background-image: url(../images/feedback-image-3.png); }
   .feedback-block .feedback-block__nav .credit-rate {
     position: relative;
+    background-image: url(../images/feedback-image-4.png);
     border: 0;
     width: 105px;
     height: 105px;
